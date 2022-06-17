@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas - Curso Práctico JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Este es el primer taller del curso práctico de JavaScript.</p>
+    </header><br><br>
+
+    <section>
+        <h2>Calcula el área de un cuadrado cm</h2>
+        <form action="">
+            <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label> <!-- En for en la etiqueta label se pone el mismo nombre que el id del input para que cuando en la página se haga click en el texto del label nos lleve al input. -->
+            <input id="InputCuadrado" type="number" placeholder="Lado"> <!-- id es un identificador que se usa para vincularlo llamar por id a scripts u hojas de estilo css -->
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+        </form>
+    </section><br>
+
+    <section>
+        <h2>Calcula el área de un triangulo isósceles cm</h2>
+        <form action="">
+            <label for="InputBaseTriangulo">Escribe cuánto mide la base del triangulo:</label> 
+            <input id="InputBaseTriangulo" type="number" placeholder="Base"> 
+            <label for="InputAlturaTriangulo">Escribe cuánto mide la altura del triangulo:</label> 
+            <input id="InputAlturaTriangulo" type="number" placeholder="Altura"> 
+            <button type="button" onclick="calcularAreaTrianguloIsosceles()">Calcular el área</button>
+        </form>
+    </section><br>
+
+    <section>
+        <h2>Calcula el área de un círculo cm</h2>
+        <form action="">
+            <label for="InputCirculo">Escribe valor del radio del círculo:</label> 
+            <input id="InputCirculo" type="number" placeholder="Radio"> 
+            <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+        </form>
+    </section><br>
+
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
